@@ -1,0 +1,36 @@
+<div class="row mt-3" id="login">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/4a90e2/external-pigeon-animal-flaticons-lineal-color-flat-icons-2.png" class="image-size" alt="Twitter logo">
+                <h2><b>Log In with <span class="font-blue">Tweeter</span></b></h2>
+                <!-- <h3 class="card-title text-center">&nbsp;<span
+                        class="font-stencil gray-color">Login</span></h3> -->
+                <div *ngIf="invalidCredentials" class="font-red reset">Invalid Credentials</div>
+                <form (ngSubmit)="submit()" [formGroup]="loginForm">
+                    <label class="card-subtitle my-2 text-muted" style="color: black;">Username</label>
+                    <input type="text" class="form-control" formControlName="userName" placeholder="Username"   [class.error-text]="logIn && (loginForm.controls.userName.invalid)"/>
+                    <div>
+                        <div *ngIf="loginForm.get('userName').errors?.required && logIn" class="font-red">Enter Username</div>
+                    </div>
+                    <label class="card-subtitle my-2 text-muted">Password</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password"  [class.error-text]="logIn && (loginForm.controls.password.invalid)"/>
+                    <div>
+                        <div *ngIf="loginForm.get('password').errors?.required && logIn" class="font-red">Enter Password</div>
+                    </div>
+                    <div style="text-align: right;"><small><a href="javascript:void(0)"(click)="forgotPassword()" class="font-blue">Forgot Password?</a></small></div> 
+                        <div class="loginbutton">
+                            <div class="inside">
+                        <button class="btn login" type="submit">Login</button>
+                    </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <a href="javascript:void(0)" routerLink="/signup" class="font-blue mt-2 text-center">Signup now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2 col-md-3"></div>
+</div>

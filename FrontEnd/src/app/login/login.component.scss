@@ -1,0 +1,47 @@
+@import './../../styles.scss';
+
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.inside{
+    width: 100%;
+    text-align: center;
+}
+
+.gray-color {
+    color: #55585a;
+}
+
+.form-control {
+    border: 1px solid #98a1ab;
+}
+.text-muted {
+    color: #98a1ab;
+}
+.login{
+    width: 50%;
+    background-color: black;
+    border-radius: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.alignment {
+    text-align: center;
+}
+.image-size {
+    width: 100px;
+    height: 100px
+}
+.card {
+    border: none;
+    width : 75%;
+}
+.reset {
+    font-family: fantasy;text-align: center !important;
+}
+.error-text {
+    border: 1px solid $color-red;
+}

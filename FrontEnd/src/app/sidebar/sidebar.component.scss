@@ -1,0 +1,30 @@
+.mydiv{
+    //  height: 100%
+      width: 100%;
+  }
+  .menubar{
+      padding-left: 20px;
+      padding-right: 0%;
+      height : 100;
+      //width :10%
+  }
+
+  body {
+    font-family: Arial;
+    //padding: 20px;
+    background: #f1f1f1;
+  }
+
+  .sidenav{
+    width : 100%;
+    text-align: left;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: lightblue;
+    background-color: white;
+    font-weight: bolder;
+  }
+  .sidenav:hover{
+    background-color: lightgray;
+  }
+  

@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="left-area">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="right-area">
+        <div class = "tweetarea">
+            <div class="row mt-3">
+                <div class="col-sm-6 ">
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <div class="profiledetail">
+                        <div class="detail">
+                        <h3>My Profile</h3>
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-7--v1.png"  class="profile-picture"/>
+                        </div>
+                    </div>
+                        <div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>Username</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;border-width: 2px;"><b>: {{user.userName}}</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>First Name</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;"><b>: {{user.firstName}}</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>Last Name</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;"><b>: {{user.lastName}}</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>Email Id</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;"><b>: {{user.emailId}}</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>Contact Number</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;"><b>: {{user.contactNumber}}</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4"><b>Date of birth</b></div>
+                            <div class="col-sm-6" style="border-color: #00bfff;"><b>: {{user.dob}}</b></div>
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <div class="col-sm-2"></div>
+                             <button class="btn col-sm-4 mytweetbtn" routerLink="/my-tweets">Click to see your tweets</button>
+                             <div class="col-sm-2"></div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="last-area">
+    </div>
+</div>
+

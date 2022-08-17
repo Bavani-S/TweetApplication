@@ -1,0 +1,65 @@
+@import './../../styles.scss';
+.hello{
+    width:100%;
+}
+
+.initial{
+    background-color: transparent;
+    
+    width: 100%;
+}
+
+.heading {
+    background-color: white;
+    height: 400px;
+    bottom: 0;
+    font-family: Copperplate;
+    padding-top: 4%;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.login {
+    border-color: black;
+    border-radius: 50px;
+    height: 35px;
+    padding: 1% 15%;
+    margin-top: 3%;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    font-weight: 200;
+    color: white;
+}
+
+.signup {
+    border-color: black;
+    border-radius: 50px;
+    height: 35px;
+    padding: 1% 15%;
+    margin-top: 3%;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-color: $color-white;
+    font-weight: 200;
+    color: black;
+}
+
+@media screen and (max-width:767px) {
+    .height-image {
+      //  background-image: url('./../../assets/twitter.jpg');
+        background-size: 100%;
+      //  background-position: 50% 50%;
+        background-repeat:repeat-x;
+        background-size: cover;
+        height: 200px;
+    }
+    .test {
+        background-color: white;
+        height: 200px;
+        font-family: Stencil Std, fantasy;
+        bottom: 0;
+    }
+}

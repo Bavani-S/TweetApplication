@@ -1,0 +1,68 @@
+@import "./../../styles.scss";
+
+  .row{
+      display: flex;
+      height: 100%;
+  }
+  .tweetarea{
+     text-align: left;
+     width: 100%;
+  }
+  .mydiv{
+    //  height: 100%
+      width: 100%;
+  }
+  .menubar{
+      padding-left: 20px;
+      padding-right: 0%;
+      height : 100%;
+      //width :10%
+  }
+
+  body {
+    font-family: Arial;
+    //padding: 20px;
+    background: #f1f1f1;
+  }
+  .left-area {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    flex:2;
+    background-color: transparent;
+  }
+  
+  .right-area {
+    float: left;
+    flex: 7;
+    width: 100%;
+  background-color: whitesmoke;
+  }
+  .last-area{
+    flex:1;
+    background-color: transparent;
+  }
+  
+
+.profile-picture {
+    border-radius: 50%;
+    width: 60%;
+    height: 85%;
+}
+.profile {
+    text-align: right !important;
+    margin-left: 0;
+    padding-right: 0;
+}
+.button {
+    padding: 1% 2%;
+    justify-content: flex-end;
+}
+.btn.btn-primary {
+    padding: unset;
+    margin-bottom: 10px;
+
+}
+.d-flex {
+    justify-content: center;
+}

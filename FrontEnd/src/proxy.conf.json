@@ -1,0 +1,17 @@
+{
+    "/user/*":{
+        "target" : "http://tweetapp-lb-789571150.us-east-1.elb.amazonaws.com/api/v1.0/tweets/user",
+        "secure":false,
+        "logLevel" : "debug"
+    },
+    "/auth/*":{
+        "target" : "http://tweetapp-lb-789571150.us-east-1.elb.amazonaws.com/api/v1.0/tweets/auth",
+        "secure":false,
+        "logLevel" : "debug"
+    },
+    "/tweet/*":{
+        "target" : "http://tweetapp-lb-789571150.us-east-1.elb.amazonaws.com/api/v1.0/tweets/tweet",
+        "secure":false,
+        "logLevel" : "debug"
+    } 
+}
