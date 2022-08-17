@@ -1,0 +1,1029 @@
+2022-03-10 14:18:30.261  INFO 13548 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-03-10 14:18:32.156  INFO 13548 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-03-10 14:18:32.157  WARN 13548 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/auth-ms/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-03-10 14:18:32.164  INFO 13548 --- [restartedMain] c.t.a.AuthenticationMsApplication        : No active profile set, falling back to default profiles: default
+2022-03-10 14:19:34.355  INFO 13548 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38a9f804-c821-3f60-b493-fae392cc5c67
+2022-03-10 14:19:54.675  INFO 13548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-03-10 14:19:54.728  INFO 13548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-10 14:19:54.731  INFO 13548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-10 14:20:12.824  INFO 13548 --- [restartedMain] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring embedded WebApplicationContext
+2022-03-10 14:20:12.831  INFO 13548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 100461 ms
+2022-03-10 14:21:01.228  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/auth/login'] with []
+2022-03-10 14:21:01.398  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/h2-console/**'] with []
+2022-03-10 14:21:01.401  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/validateToken'] with []
+2022-03-10 14:21:01.409  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/role/**'] with []
+2022-03-10 14:21:01.410  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/getName/*'] with []
+2022-03-10 14:21:01.411  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/findUser/*'] with []
+2022-03-10 14:21:01.414  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/deleteUser/*'] with []
+2022-03-10 14:21:01.415  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/forgot/**'] with []
+2022-03-10 14:21:02.442  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23b38956, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a2f8bc0, org.springframework.security.web.header.HeaderWriterFilter@488fbbf7, org.springframework.security.web.authentication.logout.LogoutFilter@7409c9a7, com.tweetapp.authenticationservice.service.JwtRequestFilter@764ad81b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d4e490f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3919a235, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2738b57b, org.springframework.security.web.session.SessionManagementFilter@9a0054e, org.springframework.security.web.access.ExceptionTranslationFilter@27b7d7f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@553c055c]
+2022-03-10 14:22:17.410  INFO 13548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35730
+2022-03-10 14:22:18.700  INFO 13548 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-03-10 14:22:26.396  INFO 13548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/api/v1.0/tweets/auth'
+2022-03-10 14:22:27.953  INFO 13548 --- [restartedMain] c.t.a.AuthenticationMsApplication        : Started AuthenticationMsApplication in 300.288 seconds (JVM running for 391.954)
+2022-03-10 14:57:04.553  INFO 13548 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-10 14:57:04.909  INFO 13548 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-10 14:57:08.824  INFO 13548 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3913 ms
+2022-03-10 14:57:12.579  INFO 13548 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 14:57:12.603  INFO 13548 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:10:44.459  INFO 13548 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:10:52.839  INFO 13548 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : user creation---->AppUser [userName=bavani2,name=Bavani Selvamani emailId=bavani2@gmail.com, password=pass, authToken=null, role=USER]
+2022-03-10 15:11:12.539  INFO 13548 --- [http-nio-8084-exec-6] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:11:13.139  INFO 13548 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:11:15.274 ERROR 13548 --- [http-nio-8084-exec-7] o.a.c.c.C.[.[.[.0.[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1.0/tweets/auth] threw exception [Request processing failed; nested exception is com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMappingException: AppUser[username]; could not unconvert attribute] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "this.setter" is null
+	at com.amazonaws.services.dynamodbv2.datamodeling.StandardBeanProperties$MethodReflect.set(StandardBeanProperties.java:133) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.set(DynamoDBMapperFieldModel.java:111) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.unconvertAndSet(DynamoDBMapperFieldModel.java:164) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.unconvert(DynamoDBMapperTableModel.java:267) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.privateMarshallIntoObject(DynamoDBMapper.java:472) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.marshallIntoObjects(DynamoDBMapper.java:500) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.PaginatedScanList.<init>(PaginatedScanList.java:64) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.scan(DynamoDBMapper.java:1571) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.scan(AbstractDynamoDBMapper.java:236) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository.findByUserId(LoginRepository.java:41) ~[classes/:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$FastClassBySpringCGLIB$$4e87de11.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.15.jar:5.3.15]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$EnhancerBySpringCGLIB$$7fbe2d75.findByUserId(<generated>) ~[classes/:na]
+	at com.tweetapp.authenticationservice.service.LoginService.userLogin(LoginService.java:37) ~[classes/:na]
+	at com.tweetapp.authenticationservice.controller.AuthController.login(AuthController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.tweetapp.authenticationservice.service.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:58) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-03-10 15:12:00.111  INFO 13548 --- [http-nio-8084-exec-9] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:12:00.489 ERROR 13548 --- [http-nio-8084-exec-9] o.a.c.c.C.[.[.[.0.[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1.0/tweets/auth] threw exception [Request processing failed; nested exception is com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMappingException: AppUser[username]; could not unconvert attribute] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "this.setter" is null
+	at com.amazonaws.services.dynamodbv2.datamodeling.StandardBeanProperties$MethodReflect.set(StandardBeanProperties.java:133) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.set(DynamoDBMapperFieldModel.java:111) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.unconvertAndSet(DynamoDBMapperFieldModel.java:164) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.unconvert(DynamoDBMapperTableModel.java:267) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.privateMarshallIntoObject(DynamoDBMapper.java:472) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.marshallIntoObjects(DynamoDBMapper.java:500) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.PaginatedScanList.<init>(PaginatedScanList.java:64) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.scan(DynamoDBMapper.java:1571) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.scan(AbstractDynamoDBMapper.java:236) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository.findByUserId(LoginRepository.java:41) ~[classes/:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$FastClassBySpringCGLIB$$4e87de11.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.15.jar:5.3.15]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$EnhancerBySpringCGLIB$$7fbe2d75.findByUserId(<generated>) ~[classes/:na]
+	at com.tweetapp.authenticationservice.service.LoginService.userLogin(LoginService.java:37) ~[classes/:na]
+	at com.tweetapp.authenticationservice.controller.AuthController.login(AuthController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.tweetapp.authenticationservice.service.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:58) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-03-10 15:36:06.298  INFO 14076 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-03-10 15:36:07.154  INFO 14076 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-03-10 15:36:07.156  WARN 14076 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/auth-ms/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-03-10 15:36:07.161  INFO 14076 --- [restartedMain] c.t.a.AuthenticationMsApplication        : No active profile set, falling back to default profiles: default
+2022-03-10 15:36:24.242  INFO 14076 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38a9f804-c821-3f60-b493-fae392cc5c67
+2022-03-10 15:36:30.702  INFO 14076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-03-10 15:36:30.798  INFO 14076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-10 15:36:30.800  INFO 14076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-10 15:36:31.544  INFO 14076 --- [restartedMain] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring embedded WebApplicationContext
+2022-03-10 15:36:31.545  INFO 14076 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 24170 ms
+2022-03-10 15:36:40.167  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/auth/login'] with []
+2022-03-10 15:36:40.169  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/h2-console/**'] with []
+2022-03-10 15:36:40.171  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/validateToken'] with []
+2022-03-10 15:36:40.172  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/role/**'] with []
+2022-03-10 15:36:40.174  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/getName/*'] with []
+2022-03-10 15:36:40.175  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/findUser/*'] with []
+2022-03-10 15:36:40.177  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/deleteUser/*'] with []
+2022-03-10 15:36:40.179  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/forgot/**'] with []
+2022-03-10 15:36:40.476  INFO 14076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53a6726f, org.springframework.security.web.context.SecurityContextPersistenceFilter@174a620b, org.springframework.security.web.header.HeaderWriterFilter@96aca02, org.springframework.security.web.authentication.logout.LogoutFilter@2ee39d88, com.tweetapp.authenticationservice.service.JwtRequestFilter@437a00c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72a2e085, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@650ead5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@432bddad, org.springframework.security.web.session.SessionManagementFilter@5ce6d5db, org.springframework.security.web.access.ExceptionTranslationFilter@14747bd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5474c55f]
+2022-03-10 15:36:57.361  INFO 14076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35730
+2022-03-10 15:36:59.046  INFO 14076 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-03-10 15:37:04.224  INFO 14076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/api/v1.0/tweets/auth'
+2022-03-10 15:37:05.472  INFO 14076 --- [restartedMain] c.t.a.AuthenticationMsApplication        : Started AuthenticationMsApplication in 69.965 seconds (JVM running for 87.277)
+2022-03-10 15:39:31.614  INFO 14076 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-10 15:39:31.616  INFO 14076 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-10 15:39:31.625  INFO 14076 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-03-10 15:39:31.725  INFO 14076 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:39:36.414 ERROR 14076 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[.0.[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1.0/tweets/auth] threw exception [Request processing failed; nested exception is com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMappingException: AppUser[username]; could not unconvert attribute] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "this.setter" is null
+	at com.amazonaws.services.dynamodbv2.datamodeling.StandardBeanProperties$MethodReflect.set(StandardBeanProperties.java:133) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.set(DynamoDBMapperFieldModel.java:111) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.unconvertAndSet(DynamoDBMapperFieldModel.java:164) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.unconvert(DynamoDBMapperTableModel.java:267) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.privateMarshallIntoObject(DynamoDBMapper.java:472) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:438) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:449) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.load(AbstractDynamoDBMapper.java:80) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository.findByUserId(LoginRepository.java:41) ~[classes/:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$FastClassBySpringCGLIB$$4e87de11.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.15.jar:5.3.15]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$EnhancerBySpringCGLIB$$48578985.findByUserId(<generated>) ~[classes/:na]
+	at com.tweetapp.authenticationservice.service.LoginService.userLogin(LoginService.java:37) ~[classes/:na]
+	at com.tweetapp.authenticationservice.controller.AuthController.login(AuthController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.tweetapp.authenticationservice.service.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:58) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-03-10 15:42:41.197  INFO 14076 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:42:41.224  INFO 14076 --- [http-nio-8084-exec-3] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:42:43.220  INFO 14076 --- [http-nio-8084-exec-3] c.t.a.controller.AuthController          : Logged in ->bavani
+2022-03-10 15:43:11.894  INFO 14076 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:43:12.843 ERROR 14076 --- [http-nio-8084-exec-5] o.a.c.c.C.[.[.[.0.[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v1.0/tweets/auth] threw exception [Request processing failed; nested exception is com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMappingException: AppUser[username]; could not unconvert attribute] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "this.setter" is null
+	at com.amazonaws.services.dynamodbv2.datamodeling.StandardBeanProperties$MethodReflect.set(StandardBeanProperties.java:133) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.set(DynamoDBMapperFieldModel.java:111) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperFieldModel.unconvertAndSet(DynamoDBMapperFieldModel.java:164) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.unconvert(DynamoDBMapperTableModel.java:267) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.privateMarshallIntoObject(DynamoDBMapper.java:472) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:438) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:449) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.load(AbstractDynamoDBMapper.java:80) ~[aws-java-sdk-dynamodb-1.12.172.jar:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository.findByUserId(LoginRepository.java:41) ~[classes/:na]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$FastClassBySpringCGLIB$$4e87de11.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.15.jar:5.3.15]
+	at com.tweetapp.authenticationservice.repository.LoginRepository$$EnhancerBySpringCGLIB$$48578985.findByUserId(<generated>) ~[classes/:na]
+	at com.tweetapp.authenticationservice.service.LoginService.userLogin(LoginService.java:37) ~[classes/:na]
+	at com.tweetapp.authenticationservice.controller.AuthController.login(AuthController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at com.tweetapp.authenticationservice.service.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:58) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2022-03-10 15:46:25.532  INFO 14076 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-03-10 15:46:27.394  INFO 14076 --- [RMI TCP Connection(22)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-10 15:46:27.536  INFO 14076 --- [RMI TCP Connection(22)-127.0.0.1] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-03-10 15:46:28.065  WARN 14076 --- [RMI TCP Connection(22)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [api#v1.0#tweets#auth] appears to have started a thread named [java-sdk-http-connection-reaper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.1/java.lang.Thread.sleep(Native Method)
+ app//com.amazonaws.http.IdleConnectionReaper.run(IdleConnectionReaper.java:188)
+2022-03-10 15:53:30.650  INFO 13040 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-03-10 15:53:32.564  INFO 13040 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-03-10 15:53:32.565  WARN 13040 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/auth-ms/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-03-10 15:53:32.574  INFO 13040 --- [restartedMain] c.t.a.AuthenticationMsApplication        : No active profile set, falling back to default profiles: default
+2022-03-10 15:53:58.165  INFO 13040 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38a9f804-c821-3f60-b493-fae392cc5c67
+2022-03-10 15:54:06.583  INFO 13040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-03-10 15:54:06.679  INFO 13040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-10 15:54:06.682  INFO 13040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-10 15:54:08.134  INFO 13040 --- [restartedMain] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring embedded WebApplicationContext
+2022-03-10 15:54:08.136  INFO 13040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 34141 ms
+2022-03-10 15:54:31.912  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/auth/login'] with []
+2022-03-10 15:54:31.936  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/h2-console/**'] with []
+2022-03-10 15:54:31.938  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/validateToken'] with []
+2022-03-10 15:54:31.939  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/role/**'] with []
+2022-03-10 15:54:31.940  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/getName/*'] with []
+2022-03-10 15:54:31.941  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/findUser/*'] with []
+2022-03-10 15:54:31.943  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/deleteUser/*'] with []
+2022-03-10 15:54:31.944  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/forgot/**'] with []
+2022-03-10 15:54:32.857  INFO 13040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@103cd116, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f7c562b, org.springframework.security.web.header.HeaderWriterFilter@7a7c4254, org.springframework.security.web.authentication.logout.LogoutFilter@15f106, com.tweetapp.authenticationservice.service.JwtRequestFilter@366d423c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53edb016, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a4dcd65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ab37eba, org.springframework.security.web.session.SessionManagementFilter@424a3eb1, org.springframework.security.web.access.ExceptionTranslationFilter@6db4af76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17a82b34]
+2022-03-10 15:54:52.992  INFO 13040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35730
+2022-03-10 15:54:54.364  INFO 13040 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-03-10 15:54:56.773  INFO 13040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/api/v1.0/tweets/auth'
+2022-03-10 15:54:58.341  INFO 13040 --- [restartedMain] c.t.a.AuthenticationMsApplication        : Started AuthenticationMsApplication in 112.086 seconds (JVM running for 136.585)
+2022-03-10 15:57:46.571  INFO 13040 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-10 15:57:46.573  INFO 13040 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-10 15:57:46.581  INFO 13040 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-03-10 15:57:46.634  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:57:50.987  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : user creation---->AppUser [userName=deepi,name=Deepika S emailId=deepi@gmail.com, password=pass, authToken=null, role=USER]
+2022-03-10 15:58:06.053  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:58:07.060  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.LoginService               : Password From DB-->pass
+2022-03-10 15:58:07.235  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.LoginService               : Password From Request-->$2a$10$mgWoNr.L4hWBqI4xMj6jmOUfKaJfFyGUkV4USBUcYEi2mGuruk4dC
+2022-03-10 15:58:08.431  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Logged in ->deepi
+2022-03-10 15:58:44.246  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:58:44.271  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 15:58:45.043  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:58:45.048  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 15:58:46.132  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:59:03.179  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 15:59:03.187  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:11:11.377  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:11:21.264  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.LoginService               : Password From DB-->pass
+2022-03-10 16:11:21.921  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.LoginService               : Password From Request-->$2a$10$hCSE12nAxGjHzhjPQn694ecGqbIAHe5GK./y53ULO1E39Ynuk1GAa
+2022-03-10 16:11:22.147  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.controller.AuthController          : Logged in ->deepi
+2022-03-10 16:11:26.912  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:11:27.257  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:12:21.236  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:12:21.242  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:12:22.106  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:12:29.493  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:12:29.539  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:13:32.767  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:13:32.793  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:13:32.859  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:13:39.398  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:13:39.415  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:13:57.412  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:13:57.484  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:13:59.846  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:13:59.880  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:14:07.374  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:14:07.439  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:14:09.566  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:14:09.581  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:14:24.426  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:14:24.517  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:14:55.680  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:14:55.696  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:15:28.012  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:15:28.026  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 16:15:47.806  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 16:15:48.407  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:03:40.891  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:03:56.666  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:04:16.245  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.LoginService               : Password From DB-->pass
+2022-03-10 17:04:17.273  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.LoginService               : Password From Request-->$2a$10$KD7ZD4dq48jl5.xsIbDdveWgsyTWnIUg81WmuC9Q0KTXQtnR9XSf6
+2022-03-10 17:04:17.478  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Logged in ->deepi
+2022-03-10 17:05:55.220  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:05:57.609  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.LoginService               : Password From DB-->pass
+2022-03-10 17:05:57.758  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.LoginService               : Password From Request-->$2a$10$Ugp98dX2fNvqwBSSwN8FrOWCcNC4PCslA4SQaHoZ3AMnXS1Surp6K
+2022-03-10 17:05:57.795  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.controller.AuthController          : Logged in ->deepi
+2022-03-10 17:06:13.337  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:06:13.933  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:09:04.543  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:09:04.556  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:15:37.878  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:15:38.951  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:17:38.724  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:17:38.925  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:19:41.871  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:19:41.873  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:20:41.333  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:20:41.346  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:22:14.766  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:22:14.782  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:24:07.963  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:24:08.090  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:25:11.430  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:25:11.433  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:25:40.077  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:25:40.080  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:27:01.661  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:27:08.131  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : user creation---->AppUser [userName=priya,name=Priya Balachandar emailId=priya@gmail.com, password=pass, authToken=null, role=USER]
+2022-03-10 17:27:19.407  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:27:20.619  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.service.LoginService               : Password From DB-->pass
+2022-03-10 17:27:21.050  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.service.LoginService               : Password From Request-->$2a$10$MaeZtK13aZncCktT3QplnenlocGH.WlVFyOP0a10KxUHQjWBSBnEW
+2022-03-10 17:27:21.064  INFO 13040 --- [http-nio-8084-exec-6] c.t.a.controller.AuthController          : Logged in ->priya
+2022-03-10 17:27:22.026  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:27:22.029  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:29:32.746  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:29:32.748  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:29:35.951  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:29:36.081  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:30:13.323  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:30:13.348  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:30:13.823  INFO 13040 --- [http-nio-8084-exec-4] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:30:19.571  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:30:19.573  INFO 13040 --- [http-nio-8084-exec-5] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:32:01.838  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:32:01.843  INFO 13040 --- [http-nio-8084-exec-7] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:32:48.001  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:32:48.008  INFO 13040 --- [http-nio-8084-exec-8] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:32:50.057  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:32:50.059  INFO 13040 --- [http-nio-8084-exec-9] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:33:00.208  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:33:00.211  INFO 13040 --- [http-nio-8084-exec-10] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:33:03.658  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:33:03.664  INFO 13040 --- [http-nio-8084-exec-2] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:33:26.373  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:33:26.526  INFO 13040 --- [http-nio-8084-exec-1] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 17:33:31.522  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.service.JwtRequestFilter           : Chaining the filter 
+2022-03-10 17:33:31.523  INFO 13040 --- [http-nio-8084-exec-3] c.t.a.controller.AuthController          : Token Validation ----->${token}
+2022-03-10 18:13:31.674  INFO 13040 --- [RMI TCP Connection(154)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-03-10 18:13:53.600  INFO 13040 --- [RMI TCP Connection(154)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-10 18:13:55.594  INFO 13040 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-03-10 18:14:10.778  WARN 13040 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [api#v1.0#tweets#auth] appears to have started a thread named [java-sdk-http-connection-reaper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.1/java.lang.Thread.sleep(Native Method)
+ app//com.amazonaws.http.IdleConnectionReaper.run(IdleConnectionReaper.java:188)
+2022-03-10 23:45:55.807  INFO 4324 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-03-10 23:45:56.249  INFO 4324 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-03-10 23:45:56.250  WARN 4324 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/auth-ms/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-03-10 23:45:56.255  INFO 4324 --- [restartedMain] c.t.a.AuthenticationMsApplication        : No active profile set, falling back to default profiles: default
+2022-03-10 23:46:06.950  INFO 4324 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38a9f804-c821-3f60-b493-fae392cc5c67
+2022-03-10 23:46:10.269  INFO 4324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-03-10 23:46:10.445  INFO 4324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-10 23:46:10.446  INFO 4324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-10 23:46:11.630  INFO 4324 --- [restartedMain] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring embedded WebApplicationContext
+2022-03-10 23:46:11.632  INFO 4324 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15295 ms
+2022-03-10 23:46:14.025 ERROR 4324 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'customerDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+2022-03-10 23:46:14.255  INFO 4324 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-10 23:46:14.304  WARN 4324 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-03-10 23:46:14.357  INFO 4324 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-10 23:46:14.623 ERROR 4324 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.tweetapp.authenticationservice.AuthenticationMsApplication.main(AuthenticationMsApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:478) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.6.3.jar:2.6.3]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'customerDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.6.3.jar:2.6.3]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 88 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:594) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:137) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:133) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 108 common frames omitted
+
+2022-03-10 23:47:19.819  INFO 9732 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-03-10 23:47:20.078  INFO 9732 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-03-10 23:47:20.079  WARN 9732 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/auth-ms/mvn%20clean%20package": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-03-10 23:47:20.083  INFO 9732 --- [restartedMain] c.t.a.AuthenticationMsApplication        : The following profiles are active: mvn clean package
+2022-03-10 23:47:25.981  INFO 9732 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38a9f804-c821-3f60-b493-fae392cc5c67
+2022-03-10 23:47:32.385  INFO 9732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-03-10 23:47:32.463  INFO 9732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-10 23:47:32.465  INFO 9732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-10 23:47:33.105  INFO 9732 --- [restartedMain] o.a.c.c.C.[.[.[/api/v1.0/tweets/auth]    : Initializing Spring embedded WebApplicationContext
+2022-03-10 23:47:33.109  INFO 9732 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12980 ms
+2022-03-10 23:47:34.052 ERROR 9732 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'customerDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+2022-03-10 23:47:34.130  INFO 9732 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-10 23:47:34.154  WARN 9732 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-03-10 23:47:34.204  INFO 9732 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-10 23:47:34.320 ERROR 9732 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.6.3.jar:2.6.3]
+	at com.tweetapp.authenticationservice.AuthenticationMsApplication.main(AuthenticationMsApplication.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.3.jar:2.6.3]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:478) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.6.3.jar:2.6.3]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'customerDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.6.3.jar:2.6.3]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appUserDetailsService': Unsatisfied dependency expressed through field 'loginRepo'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRepository': Unsatisfied dependency expressed through field 'dynamoDBMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamoDBConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 88 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'END_POINT' in value "${END_POINT}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:594) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:137) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:133) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 108 common frames omitted
+

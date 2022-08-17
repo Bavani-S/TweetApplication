@@ -1,0 +1,8 @@
+END_POINT=https://dynamodb.us-east-1.amazonaws.com
+REGION=us-east-1
+ACCESS_KEY=AKIAUDHDDONCN4VGZHCJ
+SECRET_KEY=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
+AUTH_SERVICE_URL=localhost:8084/api/v1.0/tweets/auth
+TWEET_SERVICE_URL=localhost:8086/api/v1.0/tweets/tweet
+USER_SERVICE_URL=localhost:8085/api/v1.0/tweets/user
+LOG_FILE=elk.log
